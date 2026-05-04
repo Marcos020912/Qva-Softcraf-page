@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://marcos020912.github.io/Qva-Softcraf-page/sitemap.xml
