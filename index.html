@@ -492,15 +492,16 @@
 
         .btn-outline-dark {
             background: transparent;
-            color: var(--primary);
-            border: 2px solid var(--primary);
+            color: var(--neon-blue);
+            border: 2px solid var(--neon-blue);
+            box-shadow: 0 0 15px rgba(0, 245, 255, 0.3);
         }
 
         .btn-outline-dark:hover {
-            background: linear-gradient(135deg, var(--primary), var(--neon-purple));
+            background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
             color: #fff;
             transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(189, 0, 255, 0.4);
+            box-shadow: 0 10px 30px rgba(189, 0, 255, 0.6), 0 0 20px rgba(0, 245, 255, 0.5);
         }
 
         .hero-image {
@@ -672,7 +673,10 @@
         .about-content h3 {
             font-size: 1.8rem;
             font-weight: 800;
-            color: var(--primary);
+            background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             margin-bottom: 1rem;
         }
 
@@ -903,8 +907,12 @@
         .product-info h3 {
             font-size: 2rem;
             font-weight: 800;
-            color: var(--primary);
+            background: linear-gradient(135deg, var(--neon-blue), var(--neon-pink));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             margin-bottom: 0.5rem;
+            filter: drop-shadow(0 0 20px rgba(0, 245, 255, 0.4));
         }
 
         .product-info .product-version {
@@ -1456,10 +1464,14 @@
         .footer-col h4 {
             font-size: 0.9rem;
             font-weight: 700;
-            color: #fff;
+            background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             margin-bottom: 1.2rem;
             text-transform: uppercase;
             letter-spacing: 1px;
+            filter: drop-shadow(0 0 10px rgba(0, 245, 255, 0.3));
         }
 
         .footer-col ul {
