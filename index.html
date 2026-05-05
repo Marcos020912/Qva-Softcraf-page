@@ -12,21 +12,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #0f2b46;
-            --primary-light: #1a3d5c;
-            --accent: #e8a838;
-            --accent-hover: #d4952e;
-            --accent-light: #fdf0d5;
-            --text: #2d3748;
-            --text-light: #718096;
-            --bg: #ffffff;
-            --bg-alt: #f7f9fc;
-            --bg-dark: #0b1f33;
+            /* Dark Mode - Subtle Neon Palette */
+            --primary: #0a0f1c;
+            --primary-light: #111827;
+            --accent: #00f5ff;
+            --accent-hover: #00d4e0;
+            --accent-light: rgba(0, 245, 255, 0.1);
+            --text: #e2e8f0;
+            --text-light: #94a3b8;
+            --bg: #030712;
+            --bg-alt: #0f172a;
+            --bg-dark: #020617;
             --radius: 12px;
-            --shadow: 0 4px 24px rgba(15, 43, 70, 0.08);
-            --shadow-lg: 0 12px 48px rgba(15, 43, 70, 0.12);
+            --shadow: 0 4px 24px rgba(0, 245, 255, 0.08);
+            --shadow-lg: 0 12px 48px rgba(0, 245, 255, 0.12);
             --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            /* NEW VIBRANT COLORS */
+            /* NEW VIBRANT COLORS - Dark Mode */
             --neon-blue: #00f5ff;
             --neon-purple: #bd00ff;
             --neon-pink: #ff0080;
@@ -36,7 +37,7 @@
             --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
             --gradient-4: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
             --gradient-5: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
-            --gradient-animated: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            --gradient-animated: linear-gradient(-45deg, #00f5ff, #bd00ff, #ff0080, #00ff88);
             --glow-blue: 0 0 20px rgba(0, 245, 255, 0.5);
             --glow-purple: 0 0 20px rgba(189, 0, 255, 0.5);
             --glow-pink: 0 0 20px rgba(255, 0, 128, 0.5);
@@ -99,16 +100,16 @@
             left: 0;
             width: 100%;
             z-index: 1000;
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(15, 23, 42, 0.95);
             backdrop-filter: blur(20px) saturate(180%);
-            border-bottom: 1px solid rgba(0, 245, 255, 0.1);
+            border-bottom: 1px solid rgba(0, 245, 255, 0.15);
             transition: var(--transition);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
         }
 
         nav.scrolled {
-            box-shadow: 0 8px 40px rgba(0, 245, 255, 0.15);
-            background: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 8px 40px rgba(0, 245, 255, 0.25);
+            background: rgba(15, 23, 42, 0.98);
         }
 
         .nav-inner {
@@ -171,7 +172,7 @@
 
         .nav-links a {
             text-decoration: none;
-            color: var(--text);
+            color: #e2e8f0;
             font-weight: 600;
             font-size: 0.9rem;
             transition: var(--transition);
@@ -192,8 +193,8 @@
         }
 
         .nav-links a:hover {
-            color: var(--neon-purple);
-            text-shadow: 0 0 10px rgba(189, 0, 255, 0.3);
+            color: var(--neon-blue);
+            text-shadow: 0 0 15px rgba(0, 245, 255, 0.6);
         }
 
         .nav-links a:hover::after {
@@ -617,18 +618,18 @@
             font-size: clamp(2rem, 5vw, 3.5rem);
             font-weight: 900;
             font-family: 'Orbitron', sans-serif;
-            background: linear-gradient(135deg, var(--primary), var(--neon-purple), var(--neon-blue));
+            background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple), var(--neon-pink));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             line-height: 1.2;
             margin-bottom: 1rem;
-            filter: drop-shadow(0 0 20px rgba(189, 0, 255, 0.3));
+            filter: drop-shadow(0 0 30px rgba(0, 245, 255, 0.5));
         }
 
         .section-subtitle {
             font-size: 1.05rem;
-            color: var(--text-light);
+            color: #94a3b8;
             max-width: 600px;
             margin: 0 auto;
         }
@@ -1304,12 +1305,13 @@
         .contact-info h3 {
             font-size: 1.6rem;
             font-weight: 800;
-            color: var(--primary);
+            color: var(--neon-blue);
             margin-bottom: 1rem;
+            text-shadow: 0 0 20px rgba(0, 245, 255, 0.4);
         }
 
         .contact-info>p {
-            color: var(--text-light);
+            color: #94a3b8;
             margin-bottom: 2rem;
         }
 
@@ -1323,32 +1325,37 @@
         .contact-item-icon {
             width: 48px;
             height: 48px;
-            background: var(--accent-light);
+            background: rgba(0, 245, 255, 0.1);
             border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 1.2rem;
             flex-shrink: 0;
+            border: 1px solid rgba(0, 245, 255, 0.2);
+            box-shadow: 0 0 15px rgba(0, 245, 255, 0.2);
         }
 
         .contact-item-text h4 {
             font-size: 0.9rem;
             font-weight: 700;
-            color: var(--primary);
+            color: var(--neon-blue);
             margin-bottom: 0.2rem;
+            text-shadow: 0 0 10px rgba(0, 245, 255, 0.3);
         }
 
         .contact-item-text p {
             font-size: 0.9rem;
-            color: var(--text-light);
+            color: #94a3b8;
         }
 
         .contact-form {
-            background: var(--bg);
+            background: rgba(15, 23, 42, 0.6);
             border-radius: 20px;
             padding: 2.5rem;
-            box-shadow: var(--shadow);
+            box-shadow: 0 8px 32px rgba(0, 245, 255, 0.1), inset 0 0 0 1px rgba(0, 245, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 245, 255, 0.15);
         }
 
         .form-group {
@@ -1359,8 +1366,9 @@
             display: block;
             font-size: 0.85rem;
             font-weight: 600;
-            color: var(--primary);
+            color: var(--neon-blue);
             margin-bottom: 0.4rem;
+            text-shadow: 0 0 10px rgba(0, 245, 255, 0.3);
         }
 
         .form-group input,
@@ -1368,21 +1376,21 @@
         .form-group select {
             width: 100%;
             padding: 0.8rem 1rem;
-            border: 2px solid #e2e8f0;
+            border: 2px solid rgba(0, 245, 255, 0.2);
             border-radius: 10px;
             font-family: inherit;
             font-size: 0.95rem;
-            color: var(--text);
+            color: #e2e8f0;
             transition: var(--transition);
-            background: var(--bg);
+            background: rgba(15, 23, 42, 0.5);
         }
 
         .form-group input:focus,
         .form-group textarea:focus,
         .form-group select:focus {
             outline: none;
-            border-color: var(--accent);
-            box-shadow: 0 0 0 4px rgba(232, 168, 56, 0.1);
+            border-color: var(--neon-blue);
+            box-shadow: 0 0 0 4px rgba(0, 245, 255, 0.15), 0 0 15px rgba(0, 245, 255, 0.3);
         }
 
         .form-group textarea {
@@ -1399,7 +1407,7 @@
         .form-submit {
             width: 100%;
             padding: 1rem;
-            background: var(--primary);
+            background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
             color: #fff;
             border: none;
             border-radius: 10px;
@@ -1408,12 +1416,14 @@
             font-weight: 700;
             cursor: pointer;
             transition: var(--transition);
+            box-shadow: 0 4px 20px rgba(0, 245, 255, 0.4);
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
         }
 
         .form-submit:hover {
-            background: var(--primary-light);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(15, 43, 70, 0.2);
+            background: linear-gradient(135deg, var(--neon-purple), var(--neon-pink));
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 30px rgba(189, 0, 255, 0.5), 0 0 20px rgba(0, 245, 255, 0.4);
         }
 
         /* FOOTER */
@@ -2023,7 +2033,7 @@
             <div class="section-header reveal">
                 <div class="section-label">Cómo Trabajamos</div>
                 <h2 class="section-title">Nuestro Proceso</h2>
-                <p class="section-subtitle">Un enfoque estructurado para garantizar el éxito de tu proyecto.</p>
+                <p class="section-subtitle">Un enfoque estructurado para garantizar el éxito de tu negocio.</p>
             </div>
             <div class="process-timeline">
                 <div class="process-step reveal">
@@ -2064,7 +2074,7 @@
         <div class="section-inner">
             <div class="section-header reveal">
                 <div class="section-label">Contacto</div>
-                <h2 class="section-title">Hablemos de tu Proyecto</h2>
+                <h2 class="section-title">Hablemos de tu Negocio</h2>
                 <p class="section-subtitle">Estamos aquí para ayudarte. Escríbenos y te responderemos lo antes posible.
                 </p>
             </div>
@@ -2118,7 +2128,10 @@
                             <label for="email">Correo Electrónico *</label>
                             <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
                         </div>
-
+                        <div class="form-group">
+                            <label for="telefono">Teléfono (Opcional)</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="+53 XXXXXXXX">
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="servicio">Servicio de Interés</label>
@@ -2131,10 +2144,10 @@
                     </div>
                     <div class="form-group">
                         <label for="mensaje">Mensaje *</label>
-                        <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos sobre tu proyecto o necesidad..."
+                        <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos sobre tu negocio o necesidad..."
                             required></textarea>
                     </div>
-                    <button type="submit" class="form-submit">Enviar Mensaje →</button>
+                    <button type="submit" class="form-submit">Enviar a WhatsApp →</button>
                 </form>
             </div>
         </div>
@@ -2278,9 +2291,9 @@
             // Nota: Asegúrate de tener un elemento con id="toast" en tu HTML o elimina las líneas del toast si no lo usas.
             var toast = document.getElementById('toast');
 
-            // CONFIGURACIÓN: Pon aquí tu número de WhatsApp con código de país (ej: 535623390 para Cuba)
+            // CONFIGURACIÓN: Pon aquí tu número de WhatsApp con código de país (ej: 56233950 para Chile)
             // SIN el símbolo '+' ni espacios.
-            const MY_WHATSAPP_NUMBER = "535623390";
+            const MY_WHATSAPP_NUMBER = "56233950";
 
             contactForm.addEventListener('submit', function (e) {
                 e.preventDefault();
@@ -2301,23 +2314,27 @@
 
                 // 2. Construir el mensaje
                 // Usamos \n para saltos de línea y encodeURIComponent para que sea válido en una URL
-                var textoMensaje = `Hola, soy ${nombreVal}`;
-
+                var textoMensaje = `*Nuevo Mensaje desde la Web*\n\n`;
+                textoMensaje += `*Nombre:* ${nombreVal}\n`;
+                
                 if (empresaVal) {
-                    textoMensaje += `, representante de ${empresaVal}`;
+                    textoMensaje += `*Empresa:* ${empresaVal}\n`;
                 }
-
+                
+                textoMensaje += `*Email:* ${emailVal}\n`;
+                
+                if (telefonoVal) {
+                    textoMensaje += `*Teléfono:* ${telefonoVal}\n`;
+                }
+                
                 // Mapear el valor del select a un nombre legible si es necesario
-                var productoNombre = servicioVal ? servicioVal : "General";
+                var productoNombre = servicioVal ? servicioVal : "No especificado";
                 // Opcional: Mejorar el nombre del producto para que se lea mejor
                 if (productoNombre === 'ventas-express-web') productoNombre = 'Ventas-Express Web';
                 if (productoNombre === 'ventas-express-mobil') productoNombre = 'Ventas-Express Android';
-
-                textoMensaje += ` estoy interesado en el producto "${productoNombre}".\n\n`;
-                textoMensaje += `Detalle: ${mensajeVal}\n\n`;
-                textoMensaje += `Mi correo: ${emailVal}`;
-
-
+                
+                textoMensaje += `*Servicio de Interés:* ${productoNombre}\n\n`;
+                textoMensaje += `*Mensaje:*\n${mensajeVal}`;
 
                 // 3. Codificar el mensaje para URL
                 var whatsappUrl = `https://wa.me/${MY_WHATSAPP_NUMBER}?text=${encodeURIComponent(textoMensaje)}`;
