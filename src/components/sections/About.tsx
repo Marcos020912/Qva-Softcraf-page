@@ -42,8 +42,8 @@ export function About() {
           </div>
 
           <h3 className="text-3xl sm:text-4xl font-extrabold text-foreground">
-           :{' '}
-            <span className="gradient-text">Software con Alma</span>
+           Tecnología con propósito :{' '}
+            <span className="gradient-text">Adaptada a tu realidad</span>
           </h3>
 
           <p className="text-muted-foreground leading-relaxed">

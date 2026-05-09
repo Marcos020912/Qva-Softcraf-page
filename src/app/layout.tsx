@@ -21,7 +21,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://softcraft.cu"),
   title: {
-    default: "Softcraft | Artesanía Digital - Software a Medida desde Cuba",
+    default: "Softcraft | Software a Medida desde Cuba",
     template: "%s | Softcraft",
   },
   description:
@@ -33,11 +33,10 @@ export const metadata: Metadata = {
     "software a medida",
     "Ventas Express",
     "gestión comercial",
-    "artesanía digital",
     "aplicaciones móviles",
     "desarrollo web",
   ],
-  authors: [{ name: "Softcraft", url: "https://softcraft.cu" }],
+  authors: [{ name: "Softcraft", url: "https://softcraft.com" }],
   creator: "Softcraft",
   publisher: "Softcraft",
   icons: {
@@ -49,7 +48,7 @@ export const metadata: Metadata = {
     title: "Softcraft | Artesanía Digital",
     description:
       "Desarrollo de software profesional y soluciones tecnológicas a medida desde Cuba.",
-    url: "https://softcraft.cu",
+    url: "https://softcraft.com",
     siteName: "Softcraft",
     type: "website",
     locale: "es_ES",
@@ -64,7 +63,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Softcraft | Artesanía Digital",
+    title: "Softcraft",
     description:
       "Desarrollo de software profesional y soluciones tecnológicas a medida desde Cuba.",
     },
@@ -80,7 +79,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://softcraft.cu",
+    canonical: "https://softcraft.com",
   },
 };
 
@@ -101,8 +100,8 @@ export default function RootLayout({
               '@type': 'Organization',
               name: 'Softcraft',
               alternateName: 'Softcraft Artesanía Digital',
-              url: 'https://softcraft.cu',
-              logo: 'https://softcraft.cu/softcraft-logo.png',
+              url: 'https://softcraft.com',
+              logo: 'https://softcraft.com/softcraft-logo.png',
               description: 'Desarrollo de software profesional y soluciones tecnológicas a medida desde Cuba.',
               email: 'qbasoftcraft@gmail.com',
               telephone: '+535623390',
