@@ -1,0 +1,17 @@
+{
+  "name": "Softcraft",
+  "short_name": "Softcraft",
+  "description": "Desarrollo de software profesional y soluciones tecnológicas a medida.",
+  "start_url": "/Qva-Softcraf-page/",
+  "scope": "/Qva-Softcraf-page/",
+  "display": "standalone",
+  "background_color": "#0F172A",
+  "theme_color": "#3B9FFF",
+  "icons": [
+    {
+      "src": "/Qva-Softcraf-page/softcraft-logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
